@@ -1,5 +1,6 @@
 # Out of Hours/Autolog script
 # Written by L Walber, IT Services, University of Aberdeen
+# l.walber@abdn.ac.uk
 # some time, 2015
 
 '''This script pulls down the XML file sent from our out of hours support,
@@ -142,7 +143,6 @@ def getAttachments(xmlDir):
                         with open(xmlDir + partname, 'wb') as f:
                             f.write(data)
                         attachment = partname
-    attachment = "NoohAberdeen230416.xml"
     if attachment is not None:
         log.info('Retrieved file %s.' % attachment)
     else:
