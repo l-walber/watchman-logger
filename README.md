@@ -12,4 +12,8 @@ Schedule the script to run shortly after the report usually arrives. It can be r
 
 Obviously this also requires something on the other end to catch the emails and make them into calls - we used to use SupportWorks with autologging rules, but anything similar will work.
 
-If we still used this the SMTP part would be stripped out and replaced with something using the new ITSM tool's API.
+If we still used this:
+* The SMTP part would be stripped out and replaced with something using the new ITSM tool's API.
+* Use of the API would also allow us to log the calls directly under the given user's details without manual intervention (or spoofing shenanigans).
+* The POP part would be replaced with IMAP, and maybe bundled into the primary call receiving account since we'd no longer have to download every single email.
+* Other minor changes that come with an extra five years worth of programming experience.
